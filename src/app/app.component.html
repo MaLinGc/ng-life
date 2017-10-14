@@ -1,0 +1,25 @@
+<!--<app-life [name]="title"></app-life>-->
+<!--<div class="parent">-->
+  <!--<h3>这是父组件</h3>-->
+  <!--<h3>问候语：<input type="text" [(ngModel)]="greeting"></h3>-->
+  <!--<h3>-->
+    <!--用户名：<input type="text" [(ngModel)]="user.name">-->
+  <!--</h3>-->
+  <!--&lt;!&ndash;<app-child [greeting]="greeting" [user]="user"></app-child>&ndash;&gt;-->
+<!--</div>-->
+
+<!--<app-child1 #child1></app-child1>-->
+<!--<app-child1 #child2></app-child1>-->
+<!--<button (click)="child2.greeting('Json')">调用子组件方法</button>-->
+
+
+<div class="wrapper">
+  <h3>这是父组件</h3>
+  <div>这个div定义在父组件中</div>
+  <app-child2>
+    <div class="header">header....这个div是父组件投影到子组件中的div,title 是{{title}}</div>
+    <div class="footer">footer....这个div是父组件投影到子组件中的div</div>
+  </app-child2>
+</div>
+
+<div [innerHtml]="htmlDiv"></div>
